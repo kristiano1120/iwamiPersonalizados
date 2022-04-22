@@ -1,20 +1,44 @@
-.card{
-    margin: 10px;
-    /* display: inline-block;
-    width: 25%; 
-    border: 2px;
-    border-color: black;
-    height: 10rem;
-    margin-top: 20px;
-    margin-left: auto; */
-}
-
-.card-img-top{
-    /* width: 18rem;  */
-    height: 200px;
-}
-
 .card-container{
-    display: flex;
-    flex-direction: row;
+    width: 95%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card-img{
+    width: 100%;
+    height: 550px;
+}
+
+.card-text{
+    font-size: x-large;
+}
+
+.card-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: x-large;
+}
+
+.card-link:hover{
+    color: rgb(221, 187, 74);
+    transform: scale(2px);
+}
+
+.discount{
+    background-color: black;
+    color: white;
+    margin: 3px;
+    width: max-content;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: x-large;    
+}
+
+.price{
+    font-weight: bold;
+    font-size: x-large;   
 }

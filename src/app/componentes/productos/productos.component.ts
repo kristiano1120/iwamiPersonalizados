@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductosComponent implements OnInit {
 
-  constructor() { }
+  // fotos = [];
+
+  constructor() {    
+    // this.fotos = ["../../../assets/imagenes/vestido15.jpeg",];
+  }
 
   ngOnInit(): void {
   }
