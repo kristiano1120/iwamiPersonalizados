@@ -35,7 +35,7 @@
 
 a{
     color: black;
-    font-size: larger;
+    font-size: x-large;
     text-decoration: none;
 }
 
@@ -55,12 +55,10 @@ li{
     padding: 20px;
 }
 
-.nav-main:hover{
-}
 
 hr{
     margin: 15PX 0;
     height: 2PX;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
