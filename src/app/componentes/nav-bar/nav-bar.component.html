@@ -1,37 +1,23 @@
-<div class="nav-cont">
-  <!-- Links -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid"> 
-          
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" aria-current="page" [routerLink]="['home']">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" [routerLink]="['nosotros']">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" [routerLink]="['productos']">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" [routerLink]="['contacto']">Contacto</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          <div class="iwamiIcon">
-            <img class="iwamiIcon" src="../../../assets/icons/iwami1.jpeg" alt="..." >    
-          </div> 
-        </span>
-      </div>
-    </div>
+<div class="nav-container">  
+  <nav class="navbar-main">
+    <img class="iwamiIcon" src="../../../assets/imagenes//iwami1png.png" alt="...">
+    <ul class="navbar-menu">
+      <li>
+        <a routerLinkActive="active" aria-current="page" [routerLink]="['home']">Inicio</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" [routerLink]="['nosotros']">Nosotros</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" [routerLink]="['productos']">Productos</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" [routerLink]="['contacto']">Contacto</a>
+      </li>
+    </ul>
+    <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText"
+      aria-expanded="false" aria-label="Toggle navigation">
+    </button>
   </nav>
-</div>    
-  
-
-
-
-  
+  <hr>
+</div>
