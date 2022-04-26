@@ -4,3 +4,8 @@ hr{
     height: 2PX;
     color: black;
 }
+
+.footer-content{
+    width: 95%;
+    margin: auto;
+}
