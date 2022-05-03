@@ -1,6 +1,18 @@
 .we-content{
-    width: 70%;
-    margin: auto;
+    width: 95%;
+    margin: 50px auto 50px 60px;
+}
+
+.history-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* place-items: center bottom; */
+}
+
+.history-img img{
+    width: 720px;
+    height: 286px;
+    place-items: center bottom;
 }
 
 p{
