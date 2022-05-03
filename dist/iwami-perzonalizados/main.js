@@ -318,7 +318,7 @@ class NosotrosComponent {
     }
 }
 NosotrosComponent.ɵfac = function NosotrosComponent_Factory(t) { return new (t || NosotrosComponent)(); };
-NosotrosComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NosotrosComponent, selectors: [["app-nosotros"]], decls: 21, vars: 0, consts: [["lang", "en"], ["charset", "UTF-8"], ["http-equiv", "X-UA-Compatible", "content", "IE=edge"], ["name", "viewport", "content", "width=device-width, initial-scale=1.0"], [1, "we-content"], [1, ""]], template: function NosotrosComponent_Template(rf, ctx) { if (rf & 1) {
+NosotrosComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NosotrosComponent, selectors: [["app-nosotros"]], decls: 27, vars: 0, consts: [["lang", "en"], ["charset", "UTF-8"], ["http-equiv", "X-UA-Compatible", "content", "IE=edge"], ["name", "viewport", "content", "width=device-width, initial-scale=1.0"], [1, "we-content"], [1, ""]], template: function NosotrosComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "html", 0)(1, "head");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "meta", 1)(3, "meta", 2)(4, "meta", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "title");
@@ -340,9 +340,18 @@ NosotrosComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ullam animi odit, ipsa, veritatis omnis nam quisquam sed nemo non doloremque, autem ab eligendi officiis! Repellendus eius consectetur iure magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae perspiciatis nemo voluptatibus exercitationem ratione, perferendis delectus consequatur hic facilis ducimus ipsa odio vero expedita praesentium ipsum vitae ad. Est, libero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ullam animi odit, ipsa, veritatis omnis nam quisquam sed nemo non doloremque, autem ab eligendi officiis! Repellendus eius consectetur iure magnam? ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "p", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ullam animi odit, ipsa, veritatis omnis nam quisquam sed nemo non doloremque, autem ab eligendi officiis! Repellendus eius consectetur iure magnam? ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ullam animi odit, ipsa, veritatis omnis nam quisquam sed nemo non doloremque, autem ab eligendi officiis! Repellendus eius consectetur iure magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet laborum quibusdam ipsum facere dolorem dolores officiis? Laborum et, porro hic nobis ipsam repellat temporibus eius sit quod? Laboriosam, consequatur..50 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Misi\u00F3n");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "Visi\u00F3n");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Mega");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-    } }, styles: [".we-content[_ngcontent-%COMP%]{\r\n    width: 70%;\r\n    margin: auto;\r\n}\r\n\r\np[_ngcontent-%COMP%]{\r\n    font-size: x-large;\r\n    font-weight: 500;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vc290cm9zLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0lBQ1YsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixnQkFBZ0I7QUFDcEIiLCJmaWxlIjoibm9zb3Ryb3MuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi53ZS1jb250ZW50e1xyXG4gICAgd2lkdGg6IDcwJTtcclxuICAgIG1hcmdpbjogYXV0bztcclxufVxyXG5cclxucHtcclxuICAgIGZvbnQtc2l6ZTogeC1sYXJnZTtcclxuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XHJcbn0iXX0= */"] });
+    } }, styles: [".we-content[_ngcontent-%COMP%]{\r\n    width: 70%;\r\n    margin: 50px auto 50px 60px;\r\n}\r\n\r\np[_ngcontent-%COMP%]{\r\n    font-size: x-large;\r\n    font-weight: 500;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vc290cm9zLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0lBQ1YsMkJBQTJCO0FBQy9COztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtBQUNwQiIsImZpbGUiOiJub3NvdHJvcy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLndlLWNvbnRlbnR7XHJcbiAgICB3aWR0aDogNzAlO1xyXG4gICAgbWFyZ2luOiA1MHB4IGF1dG8gNTBweCA2MHB4O1xyXG59XHJcblxyXG5we1xyXG4gICAgZm9udC1zaXplOiB4LWxhcmdlO1xyXG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcclxufSJdfQ== */"] });
 
 
 /***/ }),
