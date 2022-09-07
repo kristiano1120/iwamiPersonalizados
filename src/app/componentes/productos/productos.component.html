@@ -1,138 +1,19 @@
 <div class="card-container">
-  <div class="card" routerLink="">
+  <div class="card" routerLink="" *ngFor="let product of products">
     <div class="card-body">
-    <img src="../../../assets/imagenes/vestido2.jpeg" class="card-img" alt="...">
+    <img [src]="product.image" class="card-img" alt="...">
     <hr>
-      <h3 class="card-title">Producto 1</h3>
-      <p class="card-text">Diseño exclusivo, tela satín, sublimado.</p>
+      <h3 class="card-title">{{ product.name }}</h3>
+      <p class="card-text">{{ product.describe }}</p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Nueva Colección</li>
-      <li class="list-group-item"><p class="discount">-20%</p></li>
-      <li class="list-group-item price">$ 80.000 COP</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Vista rápida</a>
-      <a href="#" class="card-link">Comprar</a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-    <img src="../../../assets/imagenes/vestido3.jpeg" class="card-img" alt="...">
-    <hr>
-      <h3 class="card-title">Producto 1</h3>
-      <p class="card-text">Diseño exclusivo, tela satín, sublimado.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Nueva Colección</li>
-      <li class="list-group-item"><p class="discount">-20%</p></li>
-      <li class="list-group-item price">$ 80.000 COP</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Vista rápida</a>
-      <a href="#" class="card-link">Comprar</a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-    <img src="../../../assets/imagenes/lonetas.jpeg" class="card-img" alt="...">
-    <hr>
-      <h3 class="card-title">Producto 1</h3>
-      <p class="card-text">Diseño exclusivo, tela satín, sublimado.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Nueva Colección</li>
-      <li class="list-group-item"><p class="discount">-20%</p></li>
-      <li class="list-group-item price">$ 80.000 COP</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Vista rápida</a>
-      <a href="#" class="card-link">Comprar</a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-    <img src="../../../assets/imagenes/vestido5.jpeg" class="card-img" alt="...">
-    <hr>
-      <h3 class="card-title">Producto 1</h3>
-      <p class="card-text">Diseño exclusivo, tela satín, sublimado.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Nueva Colección</li>
-      <li class="list-group-item"><p class="discount">-20%</p></li>
-      <li class="list-group-item price">$ 80.000 COP</li>
+      <li class="list-group-item">{{ product.category }}</li>
+      <li class="list-group-item"><p class="discount">{{ product.discount }}% / ${{ product.price }}</p></li>
+      <li class="list-group-item price">${{ product.price-((product.discount*product.price)/100) }}</li>
     </ul>
     <div class="card-body">
       <a href="#" class="card-link">Vista rápida</a>
       <a href="#" class="card-link">Comprar</a>
     </div>
   </div>  
-  <div class="card">
-    <div class="card-body">
-    <img src="../../../assets/imagenes/pijama.jpeg" class="card-img" alt="...">
-    <hr>
-      <h3 class="card-title">Producto 1</h3>
-      <p class="card-text">Diseño exclusivo, tela satín, sublimado.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Nueva Colección</li>
-      <li class="list-group-item"><p class="discount">-20%</p></li>
-      <li class="list-group-item price">$ 80.000 COP</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Vista rápida</a>
-      <a href="#" class="card-link">Comprar</a>
-    </div>
-  </div> 
-  <div class="card">
-    <div class="card-body">
-    <img src="../../../assets/imagenes/vestido7.jpeg" class="card-img" alt="...">
-    <hr>
-      <h3 class="card-title">Producto 1</h3>
-      <p class="card-text">Diseño exclusivo, tela satín, sublimado.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Nueva Colección</li>
-      <li class="list-group-item"><p class="discount">-20%</p></li>
-      <li class="list-group-item price">$ 80.000 COP</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Vista rápida</a>
-      <a href="#" class="card-link">Comprar</a>
-    </div>
-  </div> 
-  <div class="card">
-    <div class="card-body">
-    <img src="../../../assets/imagenes/vestido8.jpeg" class="card-img" alt="...">
-    <hr>
-      <h3 class="card-title">Producto 1</h3>
-      <p class="card-text">Diseño exclusivo, tela satín, sublimado.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Nueva Colección</li>
-      <li class="list-group-item"><p class="discount">-20%</p></li>
-      <li class="list-group-item price">$ 80.000 COP</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Vista rápida</a>
-      <a href="#" class="card-link">Comprar</a>
-    </div>
-  </div> 
-  <div class="card">
-    <div class="card-body">
-    <img src="../../../assets/imagenes/vestido9.jpeg" class="card-img" alt="...">
-    <hr>
-      <h3 class="card-title">Producto 1</h3>
-      <p class="card-text">Diseño exclusivo, tela satín, sublimado.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Nueva Colección</li>
-      <li class="list-group-item"><p class="discount">-20%</p></li>
-      <li class="list-group-item price">$ 80.000 COP</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Vista rápida</a>
-      <a href="#" class="card-link">Comprar</a>
-    </div>
-  </div>   
 </div>
