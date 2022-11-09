@@ -12,4 +12,31 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  loginForm = true;
+
+  modal = document.getElementById('login');
+
+  // When the user clicks anywhere outside of the modal, close it
+  // window.onclick = function(event) {
+  //     if (event.target == modal) {
+  //         modal.style.display = "none";
+  //     }
+  // }
+
+  login = {
+    user: '',
+    password: '',
+  }
+
+  register = {
+    name: '',
+    email: '',
+    password: '',
+  }
+
+  onRegister(){
+    console.log(this.register);
+
+  }
+
 }
