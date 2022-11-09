@@ -7,7 +7,7 @@ import { Product } from 'src/app/interfaces/product.model';
   styleUrls: ['./productos.component.css']
 })
 export class ProductosComponent implements OnInit {
-  
+
   products: Product[] = [
     {
       name: 'lonetas',
@@ -168,58 +168,58 @@ export class ProductosComponent implements OnInit {
       describe: 'Diseño exclusivo, tela satín, sublimado.',
       image: '../assets/imagenes/productos/vestido17.jpeg',
       category: 'Nueva Colección'
+    },
+    {
+      name: 'vestido3',
+      price: 80000,
+      discount: 20,
+      describe: 'Diseño exclusivo, tela satín, sublimado.',
+      image: '../assets/imagenes/productos/vestido3.jpeg',
+      category: 'Nueva Colección'
+    },
+    {
+      name: 'vestido3',
+      price: 80000,
+      discount: 20,
+      describe: 'Diseño exclusivo, tela satín, sublimado.',
+      image: '../assets/imagenes/productos/vestido3.jpeg',
+      category: 'Nueva Colección'
+    },
+    {
+      name: 'vestido3',
+      price: 80000,
+      discount: 20,
+      describe: 'Diseño exclusivo, tela satín, sublimado.',
+      image: '../assets/imagenes/productos/vestido3.jpeg',
+      category: 'Nueva Colección'
+    },
+    {
+      name: 'vestido3',
+      price: 80000,
+      discount: 20,
+      describe: 'Diseño exclusivo, tela satín, sublimado.',
+      image: '../assets/imagenes/productos/vestido3.jpeg',
+      category: 'Nueva Colección'
+    },
+    {
+      name: 'vestido3',
+      price: 80000,
+      discount: 20,
+      describe: 'Diseño exclusivo, tela satín, sublimado.',
+      image: '../assets/imagenes/productos/vestido3.jpeg',
+      category: 'Nueva Colección'
+    },
+    {
+      name: 'vestido4',
+      price: 80000,
+      discount: 20,
+      describe: 'Diseño exclusivo, tela satín, sublimado.',
+      image: '../assets/imagenes/productos/vestido4.jpeg',
+      category: 'Nueva Colección'
     }
-    // {
-    //   name: 'vestido3',
-    //   price: 80000,
-    //   discount: 20,
-    //   describe: 'Diseño exclusivo, tela satín, sublimado.',
-    //   image: '../assets/imagenes/productos/vestido3.jpeg',
-    //   category: 'Nueva Colección'
-    // },
-    // {
-    //   name: 'vestido3',
-    //   price: 80000,
-    //   discount: 20,
-    //   describe: 'Diseño exclusivo, tela satín, sublimado.',
-    //   image: '../assets/imagenes/productos/vestido3.jpeg',
-    //   category: 'Nueva Colección'
-    // },
-    // {
-    //   name: 'vestido3',
-    //   price: 80000,
-    //   discount: 20,
-    //   describe: 'Diseño exclusivo, tela satín, sublimado.',
-    //   image: '../assets/imagenes/productos/vestido3.jpeg',
-    //   category: 'Nueva Colección'
-    // },
-    // {
-    //   name: 'vestido3',
-    //   price: 80000,
-    //   discount: 20,
-    //   describe: 'Diseño exclusivo, tela satín, sublimado.',
-    //   image: '../assets/imagenes/productos/vestido3.jpeg',
-    //   category: 'Nueva Colección'
-    // },
-    // {
-    //   name: 'vestido3',
-    //   price: 80000,
-    //   discount: 20,
-    //   describe: 'Diseño exclusivo, tela satín, sublimado.',
-    //   image: '../assets/imagenes/productos/vestido3.jpeg',
-    //   category: 'Nueva Colección'
-    // },
-    // {
-    //   name: 'vestido4',
-    //   price: 80000,
-    //   discount: 20,
-    //   describe: 'Diseño exclusivo, tela satín, sublimado.',
-    //   image: '../assets/imagenes/productos/vestido4.jpeg',
-    //   category: 'Nueva Colección'
-    // }
   ];
 
-  constructor() {    
+  constructor() {
     // this.fotos = ["../../../assets/imagenes/vestido15.jpeg",];
   }
 

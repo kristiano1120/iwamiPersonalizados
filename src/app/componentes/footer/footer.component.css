@@ -1,8 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 hr{
-    width: 95%;    
-    margin: 20px auto;
+    margin: 15PX 0;
     height: 2PX;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .footer-content{
