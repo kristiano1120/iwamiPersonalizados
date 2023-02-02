@@ -1,0 +1,26 @@
+.contacto-form-content{
+    width: min-content;
+    margin: 20px auto;
+    padding: 10PX;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.contacto-form{
+    margin: 10px;
+    padding: 10px;
+}
+.input-group{
+    display: inline;
+}
+.input-group label{
+    
+}
+.input-group input{
+    border-radius: 5px;
+}
+
+
+/* Es una regla CSS que se aplica a todos los elementos. */
+.form-submit {
+    padding: 1px 5px;
+}

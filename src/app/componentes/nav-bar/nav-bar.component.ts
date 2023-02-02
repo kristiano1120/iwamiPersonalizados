@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+  classApplied = false;
+  
+  
+
+  toggleSideBar(){
+    console.log('Valor'); 
+    this.classApplied =  !this.classApplied;
+  }
+  
+
+ 
+  
+  
+
   constructor() { }
 
   ngOnInit(): void {

@@ -15,7 +15,7 @@
             incidunt quisquam unde consequatur porro ducimus magnam necessitatibus, minus, a aliquam in ut facere!
         </p>
 
-        <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
+        <button onclick="document.getElementById('login').style.display='block'" style="width:auto; padding:1px 5px;">Login</button>
         <div class="login-form modal-content animate modal" name="login" id="login" >
           <form>
             <div class="imgcontainer">
@@ -23,22 +23,22 @@
               <img src="../../../assets/imagenes/descarga.png" alt="Avatar" class="avatar">
             </div>
             <div class="input-group">
-              <label for="name">
+              <label for="name" class="modal-label">
                 Usuario:
               </label>
-              <input type="text" name="user" id="user" [(ngModel)]="login.user" />
-              <p>Mensaje de error</p>
+              <input type="text" name="user" id="user-modal" [(ngModel)]="login.user" />
+              <p id="msj-error">Debe ingresar el nombre</p>
             </div>
             <div class="input-group">
-              <label for="password">
+              <label for="password" class="modal-label">
                 Contraseña:
               </label>
-              <input type="password" name="password" id="password" [(ngModel)]="login.password" />
-              <p>Mensaje de error</p>
+              <input type="password" name="password" id="password-modal" [(ngModel)]="login.password" />
+              <p id="msj-error">Debe ingresar el la contraseña</p>
             </div>
             <div class="input-group">
-              <input type="button" name="ingresar" id="ingresar" value="Ingresar" />
-              <input type="button" name="registrar" id="registrar" value="Registrar" />
+              <button class="modal-submit-ingresar" type="submit" [disabled]="loginForm.invalid">Ingresar</button>
+              <button class="modal-submit-registrar" type="submit" [disabled]="loginForm.invalid">Registrar</button>
             </div>
 
           </form>
@@ -47,27 +47,27 @@
         <div class="register-form" name="register" id="register" >
           <form (ngSubmit)="onRegister()" #loginForm="ngForm">
             <div class="input-group">
-              <label for="name">
+              <label for="name" class="form-label">
                 Nombre:
               </label>
-              <input type="text" name="name" id="name" [(ngModel)]="register.name" />
-              <p>Mensaje de error</p>
+              <input  type="text" name="name" id="name" [(ngModel)]="register.name" />
+              <p id="msj-error">Debe ingresar el nombre</p>
             </div>
             <div class="input-group">
-              <label for="email">
+              <label for="email" class="form-label">
                 Email:
               </label>
               <input type="email" name="email" id="email" [(ngModel)]="register.email" />
-              <p>Mensaje de error</p>
+              <p id="msj-error">Debe ingresar el email</p>
             </div>
             <div class="input-group">
-              <label for="password">
+              <label for="password" class="form-label">
                 Contraseña:
               </label>
               <input type="password" name="password" id="password" [(ngModel)]="register.password" />
-              <p>Mensaje de error</p>
+              <p id="msj-error">Debe ingresar la contraseña</p>
             </div>
-            <button type="submit" [disabled]="loginForm.invalid">Registrar</button>
+            <button class="form-submit" type="submit" [disabled]="loginForm.invalid">Registrar</button>
           </form>
         </div>
     </section>

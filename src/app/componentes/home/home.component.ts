@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   loginForm = true;
 
-  modal = document.getElementById('login');
+ 
 
   // When the user clicks anywhere outside of the modal, close it
   // window.onclick = function(event) {

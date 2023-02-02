@@ -11,6 +11,22 @@ hr{
 }
 
 .footer-content{
+    display: flex;
+    flex-direction: column;
+}
+/* .footer-content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     width: 95%;
     margin: auto;
+} */
+
+
+.contact-one, .contact-two, .contact-three{
+    text-align: justify;
+    width: 80%;
+    margin: 10px auto;
+}
+h2{
+    text-align: center;
 }

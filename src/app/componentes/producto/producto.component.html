@@ -1,0 +1,19 @@
+<div class="card-container">
+    <div class="card" routerLink="" *ngFor="let product of products">
+      <div class="card-body">
+      <img [src]="product.image" class="card-img" alt="...">
+      <hr>
+        <h3 class="card-title">{{ product.name }}</h3>
+        <p class="card-text">{{ product.describe }}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{ product.category }}</li>
+        <li class="list-group-item"><p class="discount">{{ product.discount }}% / ${{ product.price }}</p></li>
+        <li class="list-group-item price">${{ product.price-((product.discount*product.price)/100) }}</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Vista rápida</a>
+        <a href="#" class="card-link">Comprar</a>
+      </div>
+    </div>  
+  </div>

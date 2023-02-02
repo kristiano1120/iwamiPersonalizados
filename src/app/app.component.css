@@ -1,0 +1,26 @@
+header{
+   position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 0px 0px; 
+    z-index: 2000;
+}
+/* .abajo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 5px;
+    height: 80px;
+    
+    background-color: rgb(255, 255, 255);
+} */
+section {
+    margin-top: 80px;
+}
+

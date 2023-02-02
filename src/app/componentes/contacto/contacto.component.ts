@@ -12,4 +12,20 @@ export class ContactoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  login = {
+    user: '',
+    password: '',
+  }
+
+  register = {
+    name: '',
+    email: '',
+    password: '',
+  }
+
+  onRegister(){
+    console.log(this.register);
+
+  }
+
 }

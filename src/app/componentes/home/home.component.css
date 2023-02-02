@@ -1,21 +1,48 @@
 .container-home{
-  height: 800px;
-  width: 95%;
+  width: 90%;
   margin: auto;
+  padding: 20px 0;
   background-image: url("../../../assets/imagenes/icons/fondo2.webp");
+/*   background-color: rgb(87, 72, 55); */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 h1{
+  font-size: 21px;
   margin: 20px;
+  text-align: center;
 }
 p{
-  font-weight: 600;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   margin: 20px;
+  text-align: justify;
+}
+
+.form-label{
+  color: #fefefe;
+  width: 100%;
+  margin: 5px 30px 5px 30px;
+}
+#name, #email, #password{
+  width: 100%;
+  margin: 0px 30px 0px 30px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#msj-error{
+  width: 100%;
+  margin: 0px 30px 0px 30px;
+  font-size: x-small;
+  color: rgb(248, 0, 0);
+  display: none;
+}
+.form-submit {
+  padding: 1px 5px;
+  margin: 15px 0px 0 30px;
 }
 
 .modal {
@@ -23,9 +50,9 @@ p{
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: auto;
-  top: 340px;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  /*top: 340px;*/
+  width: 80%; /* Full width */
+  height: 80%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -34,9 +61,31 @@ p{
 
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 90px auto 0 auto;
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 80%;
+  height: 350px;
+}
+.modal-label{
+  color: #000000;
+  width: 100%;
+  margin: 5px 30px 5px 30px;
+}
+#user-modal, #password-modal{
+  width: 100%;
+  margin: 0px 30px 0 30px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.modal-submit-ingresar{
+  padding: 1px 5px;
+  margin: 15px 30px 0 30px;
+}
+.modal-submit-registrar{
+  padding: 1px 5px;
+  margin: 15px 0px 0px 20px;
+  right: 15px;
 }
 
 .animate {
@@ -68,11 +117,4 @@ img.avatar {
   border-radius: 50%;
 }
 
-input[type=text], input[type=email], input[type=password]{
-  width: 90%;
-  padding: 10px 10px;
-  margin: 8px 0px 12px 0px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
+

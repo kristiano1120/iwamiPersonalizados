@@ -1,8 +1,13 @@
 /* Application-wide Styles */
-* {
+
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
 }
+
+
 
 h1 {
   color: rgb(221, 187, 74);

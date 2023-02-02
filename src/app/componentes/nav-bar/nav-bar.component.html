@@ -1,23 +1,31 @@
-<div class="nav-container">  
+  <div class="nav-container">  
   <nav class="navbar-main">
-    <img class="iwamiIcon" src="../../../assets/imagenes/icons/iwami1png.png" alt="...">
-    <ul class="navbar-menu">
+    
+    <ul class="navbar-menu" [class.navbar-menu-show]="classApplied">
       <li>
-        <a routerLinkActive="active" aria-current="page" [routerLink]="['home']">Inicio</a>
+        <img class="iwamiIcon" src="../../../assets/imagenes/icons/iwami1png.png" alt="...">
       </li>
       <li>
-        <a routerLinkActive="active" [routerLink]="['nosotros']">Nosotros</a>
+        <a routerLinkActive="active" aria-current="page" [routerLink]="['home']" (click)="toggleSideBar()">Inicio</a>
       </li>
       <li>
-        <a routerLinkActive="active" [routerLink]="['productos']">Productos</a>
+        <a routerLinkActive="active" [routerLink]="['nosotros']" (click)="toggleSideBar()">Nosotros</a>
       </li>
       <li>
-        <a routerLinkActive="active" [routerLink]="['contacto']">Contacto</a>
+        <a routerLinkActive="active" [routerLink]="['productos']" (click)="toggleSideBar()">Productos</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" [routerLink]="['contacto']" (click)="toggleSideBar()">Contacto</a>
       </li>
     </ul>
-    <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText"
-      aria-expanded="false" aria-label="Toggle navigation">
-    </button>
+    
+    <div class="menu-btn" id="menu-btn" (click)="toggleSideBar()">   
+      <label for="menu-btn" class="lbl-menu">
+          <span id="spn1"></span>
+          <span id="spn2"></span>
+          <span id="spn3"></span>
+      </label>
+    </div>
+    <hr>
   </nav>
-  <hr>
 </div>

@@ -11,11 +11,14 @@ import { WhatsappComponent } from './componentes/whatsapp/whatsapp.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
 import { ProductosComponent } from './componentes/productos/productos.component';
+import { ProductoComponent } from './componentes/producto/producto.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,    
-    NavBarComponent, FooterComponent, ContactoComponent, WhatsappComponent, HomeComponent, NosotrosComponent, ProductosComponent
+    NavBarComponent, FooterComponent, ContactoComponent, WhatsappComponent, HomeComponent, NosotrosComponent, ProductosComponent, ProductoComponent
   ],
   imports: [
     BrowserModule,

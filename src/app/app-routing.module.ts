@@ -9,6 +9,7 @@ import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
 import { ProductosComponent } from './componentes/productos/productos.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'nav', component: NavBarComponent},
   {path: 'home', component: HomeComponent},
   {path: 'nosotros', component: NosotrosComponent},

@@ -1,13 +1,7 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 .nav-container{
-    width: 95%;
-    margin: auto;
-    margin-top: 20px;    
+    margin: 5px 10px;
+    background: white;
+    border: 1px  rgb(20, 19, 18);
 }
 
 .navbar-main{
@@ -16,10 +10,34 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    padding: 20px 0;
-    /* background-color: rgba(228, 204, 69, 0.897); */
-    /* -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%); */
-    /* box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%); */
+    padding: 15px 5px;    
+}
+
+/*--NAV BAR MENU RESPONSIVE--*/
+.navbar-menu{
+   display: block;
+   top: 0;
+   left: 0%;
+   background-color: rgb(255, 255, 255);
+   border-radius: 0px 0px 10px 0px ;
+   opacity: 0.9;
+   transform: translate(-400px);
+   transition: transform .20s ease-in-out;
+   z-index: 2000;
+}
+.navbar-menu-show {
+    transform: translate(0px);
+}
+
+ul{
+    display: block;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+li{
+    padding: 20px 10px 20px 10px;
 }
 
 /*--NAV BAR MENU--*/
@@ -27,8 +45,69 @@
     width: 150px;
     height: 70px;
 }
+a{
+    color: black;
+    font-size: x-large;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(221, 187, 74);
+    border-radius: 5px;
+}
 
-.navbar-menu{
+
+/*--NAV BAR MENU BUTTON--*/
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    height: 50px;
+    right: 10px;
+    width: 60px;
+}
+
+.lbl-menu{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    right: -9px;
+    top: 9px;
+    transform: scale(1.2);
+    margin: 2px;
+}
+label {
+}
+.lbl-menu #spn1,#spn2,#spn3{
+    position: absolute;
+    content: '';
+    background:rgb(81, 81, 81);
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+#spn2{
+    top: 12px;
+}
+#spn3{
+    top: 23px;
+}
+
+
+hr{
+    margin: 15PX 0;
+    height: 2PX;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+/*.navbar-menu{
     flex: 1;
     margin-left: 20px;
 }
@@ -41,9 +120,7 @@ a{
 
 a:hover{
     color: rgb(221, 187, 74);
-    /* background-color: rgb(215, 249, 250); */
     border-radius: 5px;
-    /* padding: 5px;   */
 }
 
 ul{
@@ -61,4 +138,4 @@ hr{
     height: 2PX;
     color: rgb(0, 0, 0);
 }
-
+ */
