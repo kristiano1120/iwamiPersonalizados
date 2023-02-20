@@ -24,3 +24,10 @@
 .form-submit {
     padding: 1px 5px;
 }
+.msj-error{
+    display: none;
+}
+.content-btn{
+    margin: 10px auto;
+}
+

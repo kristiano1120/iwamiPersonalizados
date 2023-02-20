@@ -1,26 +1,42 @@
 <div class="contacto-form-content" name="register" id="register" >
-    <form class="contacto-form" (ngSubmit)="onRegister()" #loginForm="ngForm">
+    <form class="contacto-form" (ngSubmit)="onContactar()" #loginForm="ngForm">
       <div class="input-group">
         <label for="name">
           Nombre:
         </label>
-        <input class="input" type="text" name="name" id="name" [(ngModel)]="register.name" />
-        <p>Mensaje de error</p>
+        <input class="input" type="text" name="name" id="name" [(ngModel)]="contactar.name" required/>
+        <p class="msj-error" ng>Mensaje de error</p>
       </div>
       <div class="input-group">
         <label for="email">
           Email:
         </label>
-        <input type="email" name="email" id="email" [(ngModel)]="register.email" />
-        <p>Mensaje de error</p>
+        <input type="email" name="email" id="email" [(ngModel)]="contactar.email" required/>
+        <p class="msj-error">Mensaje de error</p>
       </div>
       <div class="input-group">
-        <label for="password">
-          Contraseña:
+        <label for="telefono">
+          Teléfono:
         </label>
-        <input type="password" name="password" id="password" [(ngModel)]="register.password" />
-        <p>Mensaje de error</p>
+        <input type="phone" name="telefono" id="telefono" [(ngModel)]="contactar.telefono"/>
+        <p class="msj-error">Mensaje de error</p>
       </div>
-      <button class="form-submit" type="submit" [disabled]="loginForm.invalid">Registrar</button>
+      <div class="input-group">
+        <label for="celular">
+          Celular:
+        </label>
+        <input type="celular" name="celular" id="celular" [(ngModel)]="contactar.celular" required/>
+        <p class="msj-error">Mensaje de error</p>
+      </div>
+      <div class="input-group">
+        <label for="whatsApp">
+          WhatsApp:
+        </label>
+        <input type="whatsApp" name="whatsApp" id="whatsApp" [(ngModel)]="contactar.whatsApp" required/>
+        <p class="msj-error">Mensaje de error</p>
+      </div>
+      <div class="content-btn">
+        <button class="form-submit" type="submit" [disabled]="loginForm.invalid">Registrar</button>
+      </div>
     </form>
   </div>

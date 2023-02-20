@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   loginForm = true;
 
- 
+  modal = document.getElementById('login');
 
   // When the user clicks anywhere outside of the modal, close it
   // window.onclick = function(event) {
@@ -37,6 +37,15 @@ export class HomeComponent implements OnInit {
   onRegister(){
     console.log(this.register);
 
+  }
+  onLogin(){
+    console.log(this.login);
+  }
+
+  closeModal(){
+    if(this.modal)
+     this.modal.style.display='none';
+     this.loginForm = false;
   }
 
 }

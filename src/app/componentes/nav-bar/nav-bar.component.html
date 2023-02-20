@@ -2,8 +2,10 @@
   <nav class="navbar-main">
     
     <ul class="navbar-menu" [class.navbar-menu-show]="classApplied">
-      <li>
-        <img class="iwamiIcon" src="../../../assets/imagenes/icons/IWAMI DORADO.png" alt="...">
+      <li class="img-li">
+        <a routerLinkActive="active" aria-current="page" [routerLink]="['home']" (click)="toggleSideBar()">
+          <img class="iwamiIcon" src="../../../assets/imagenes/icons/IWAMI DORADO.png" alt="...">
+        </a>
       </li>
       <li>
         <a routerLinkActive="active" aria-current="page" [routerLink]="['home']" (click)="toggleSideBar()">Inicio</a>
@@ -20,7 +22,7 @@
     </ul>
 
     <div class="content-btn-cart-user" id="content-btn-cart-user"> 
-      <div class="account">
+      <div class="account" [class.navbar-menu-show-account]="classApplied">
         <label for="">user@userlogged.com</label> 
       </div>
       <div class="cart-content">

@@ -15,9 +15,8 @@
             incidunt quisquam unde consequatur porro ducimus magnam necessitatibus, minus, a aliquam in ut facere!
         </p>
 
-        <button onclick="document.getElementById('login').style.display='block'" style="width:auto; padding:1px 5px;">Login</button>
         <div class="login-form modal-content animate modal" name="login" id="login" >
-          <form>
+          <form (ngSubmit)="onLogin()" #loginForm="ngForm" >
             <div class="imgcontainer">
               <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
               <img src="../../../assets/imagenes/descarga.png" alt="Avatar" class="avatar">
@@ -26,48 +25,50 @@
               <label for="name" class="modal-label">
                 Usuario:
               </label>
-              <input type="text" name="user" id="user-modal" [(ngModel)]="login.user" />
+              <input type="text" name="user" id="user-modal" [(ngModel)]="login.user" required/>
               <p id="msj-error">Debe ingresar el nombre</p>
             </div>
             <div class="input-group">
               <label for="password" class="modal-label">
                 Contraseña:
               </label>
-              <input type="password" name="password" id="password-modal" [(ngModel)]="login.password" />
+              <input type="password" name="password" id="password-modal" [(ngModel)]="login.password" required/>
               <p id="msj-error">Debe ingresar el la contraseña</p>
             </div>
-            <div class="input-group">
-              <button class="modal-submit-ingresar" type="submit" [disabled]="loginForm.invalid">Ingresar</button>
-              <button class="modal-submit-registrar" type="submit" [disabled]="loginForm.invalid">Registrar</button>
+            <div class="content-buttons-modal">
+              <button class="modal-btn" type="submit" [disabled]="loginForm.invalid">Inicia sesión</button>
+              <button class="modal-btn" type="button" onclick="document.getElementById('login').style.display='none'" >Regístrate</button>
             </div>
-
           </form>
         </div>
 
         <div class="register-form" name="register" id="register" >
-          <form (ngSubmit)="onRegister()" #loginForm="ngForm">
+          <form (ngSubmit)="onRegister()" #registerForm="ngForm">
             <div class="input-group">
               <label for="name" class="form-label">
                 Nombre:
               </label>
-              <input  type="text" name="name" id="name" [(ngModel)]="register.name" />
+              <input  type="text" name="name" id="name" [(ngModel)]="register.name" required/>
               <p id="msj-error">Debe ingresar el nombre</p>
             </div>
             <div class="input-group">
               <label for="email" class="form-label">
                 Email:
               </label>
-              <input type="email" name="email" id="email" [(ngModel)]="register.email" />
+              <input type="email" name="email" id="email" [(ngModel)]="register.email" required/>
               <p id="msj-error">Debe ingresar el email</p>
             </div>
             <div class="input-group">
               <label for="password" class="form-label">
                 Contraseña:
               </label>
-              <input type="password" name="password" id="password" [(ngModel)]="register.password" />
-              <p id="msj-error">Debe ingresar la contraseña</p>
+              <input type="password" name="password" id="password" [(ngModel)]="register.password" required/>
+              <p id="msj-error" ngClass="msj-error">Debe ingresar la contraseña</p>
             </div>
-            <button class="form-submit" type="submit" [disabled]="loginForm.invalid">Registrar</button>
+            <div class="content-buttons">
+              <button [disabled]="registerForm.invalid" class="form-btn" type="submit" >Regístrate</button>
+              <button class="form-btn" type="button" onclick="document.getElementById('login').style.display='block'" >Inicia sesión</button>
+            </div>
           </form>
         </div>
     </section>
