@@ -15,15 +15,15 @@
 
 /*--NAV BAR MENU RESPONSIVE--*/
 .navbar-menu{
-   display: block;
-   top: 0;
-   left: 0%;
-   background-color: rgb(255, 255, 255);
-   border-radius: 0px 0px 10px 0px ;
-   opacity: 0.9;
-   transform: translate(-400px);
-   transition: transform .20s ease-in-out;
-   z-index: 2000;
+    display: block;
+    top: 0;
+    left: 0%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 10px 0px ;
+    opacity: 0.9;
+    transform: translate(-400px);
+    transition: transform .20s ease-in-out;
+    z-index: 2000;
 }
 .navbar-menu-show {
     transform: translate(0px);
@@ -56,41 +56,71 @@ a:hover{
 }
 
 
-/*--NAV BAR MENU BUTTON--*/
-.menu-btn{
-    position: absolute;
-    cursor: pointer;
-    height: 50px;
-    right: 10px;
-    width: 60px;
+/*--NAV BAR MENU BTN CAR USER--*/
+.content-btn-cart-user{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  right: 20px;
+  gap: 10px
+}
+.account {
+  display: none;
+}
+.cart-content{
+  opacity: 0.8;
 }
 
-.lbl-menu{
-    width: 40px;
-    height: 30px;
-    position: relative;
-    cursor: pointer;
-    right: -9px;
-    top: 9px;
-    transform: scale(1.2);
-    margin: 2px;
+.menu-btn{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-label {
+.menu-btn img{
+  width: 38px;
+  height: 8px;
+  opacity: 0.8;
 }
-.lbl-menu #spn1,#spn2,#spn3{
-    position: absolute;
-    content: '';
-    background:rgb(81, 81, 81);
-    width: 40px;
-    height: 5px;
+
+hr{
+    margin: 15PX 0;
+    height: 2PX;
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  .account {
+    display: flex;
+  }
+  .menu-btn{
+    display: none;
+  }
+  navbar-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+a{
+    color: black;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(221, 187, 74);
     border-radius: 5px;
-    transition: all 400ms ease;
 }
-#spn2{
-    top: 12px;
+
+ul{
+    list-style: none;
+    display: flex;
 }
-#spn3{
-    top: 23px;
+
+li{
+    padding: 20px;
 }
 
 
@@ -99,6 +129,8 @@ hr{
     height: 2PX;
     color: rgb(0, 0, 0);
 }
+}
+
 
 
 
@@ -139,3 +171,4 @@ hr{
     color: rgb(0, 0, 0);
 }
  */
+

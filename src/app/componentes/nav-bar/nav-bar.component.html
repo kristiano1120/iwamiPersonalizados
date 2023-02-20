@@ -1,9 +1,9 @@
-  <div class="nav-container">  
+<div class="nav-container">  
   <nav class="navbar-main">
     
     <ul class="navbar-menu" [class.navbar-menu-show]="classApplied">
       <li>
-        <img class="iwamiIcon" src="../../../assets/imagenes/icons/iwami1png.png" alt="...">
+        <img class="iwamiIcon" src="../../../assets/imagenes/icons/IWAMI DORADO.png" alt="...">
       </li>
       <li>
         <a routerLinkActive="active" aria-current="page" [routerLink]="['home']" (click)="toggleSideBar()">Inicio</a>
@@ -18,14 +18,58 @@
         <a routerLinkActive="active" [routerLink]="['contacto']" (click)="toggleSideBar()">Contacto</a>
       </li>
     </ul>
-    
-    <div class="menu-btn" id="menu-btn" (click)="toggleSideBar()">   
-      <label for="menu-btn" class="lbl-menu">
-          <span id="spn1"></span>
-          <span id="spn2"></span>
-          <span id="spn3"></span>
-      </label>
+
+    <div class="content-btn-cart-user" id="content-btn-cart-user"> 
+      <div class="account">
+        <label for="">user@userlogged.com</label> 
+      </div>
+      <div class="cart-content">
+        <a href="">
+          <img src="./assets/svg/icon_shopping_cart.svg" alt="logo">
+        </a>
+      </div>  
+      <div class="menu-btn" (click)="toggleSideBar()">
+          <img src="../../../assets/imagenes/icons/linea.png" alt="logo">
+          <img src="../../../assets/imagenes/icons/linea.png" alt="logo">
+          <img src="../../../assets/imagenes/icons/linea.png" alt="logo">
+      </div>
     </div>
     <hr>
   </nav>
 </div>
+
+<!-- <div class="show-mobile">
+  <div>
+    <button>
+      <img src="./assets/svg/icon_menu.svg" alt="menu">
+    </button>
+    <a href="">
+      <img src="./assets/svg/logo_yard_sale.svg" alt="logo">
+    </a>
+    <a href="">
+      <img src="./assets/svg/icon_shopping_cart.svg" alt="logo">
+    </a>
+  </div>
+</div>
+<div class="hide-mobile">
+  <div>
+    <nav>
+      <a class="logo" href="">
+        <img src="./assets/svg/logo_yard_sale.svg" alt="logo">
+      </a>
+      <ul>
+        <li><a href="">All</a></li>
+        <li><a href="">Clothes</a></li>
+        <li><a href="">Electronics</a></li>
+      </ul>
+    </nav>
+    <div class="info">
+      <div class="account">nicolas@nicolas.com</div>
+      <div>
+        <a href="">
+          <img src="./assets/svg/icon_shopping_cart.svg" alt="logo">
+        </a>
+      </div>
+    </div>
+  </div>
+</div> -->
