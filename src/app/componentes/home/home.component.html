@@ -26,7 +26,7 @@
                 Usuario:
               </label>
               <input type="text" name="user" id="user-modal" [(ngModel)]="login.user" required/>
-              <p id="msj-error">Debe ingresar el nombre</p>
+              <p id="msj-error" >Debe ingresar el nombre</p>
             </div>
             <div class="input-group">
               <label for="password" class="modal-label">
@@ -48,28 +48,34 @@
               <label for="name" class="form-label">
                 Nombre:
               </label>
-              <input  type="text" name="name" id="name" [(ngModel)]="register.name" required/>
-              <p id="msj-error">Debe ingresar el nombre</p>
+              <input  type="text" 
+                      name="name" id="name" 
+                      [(ngModel)]="register.name" 
+                      required  
+                      #registerName="ngModel"
+                      />
+              <p style="none"[ngClass]="{'msj-error': registerName.invalid, 'msj-error-none': registerName.valid}">Debe ingresar el nombre</p>
             </div>
             <div class="input-group">
               <label for="email" class="form-label">
                 Email:
               </label>
               <input type="email" name="email" id="email" [(ngModel)]="register.email" required/>
-              <p id="msj-error">Debe ingresar el email</p>
+              <p id="msj-error" [ngClass]="{'msj-error': registerName.invalid, 'msj-error-none': registerName.valid}">Debe ingresar el email</p>
             </div>
             <div class="input-group">
               <label for="password" class="form-label">
                 Contraseña:
               </label>
               <input type="password" name="password" id="password" [(ngModel)]="register.password" required/>
-              <p id="msj-error" ngClass="msj-error">Debe ingresar la contraseña</p>
+              <p id="msj-error" [ngClass]="{'msj-error': registerName.invalid, 'msj-error-none': registerName.valid}">Debe ingresar la contraseña</p>
             </div>
             <div class="content-buttons">
               <button [disabled]="registerForm.invalid" class="form-btn" type="submit" >Regístrate</button>
               <button class="form-btn" type="button" onclick="document.getElementById('login').style.display='block'" >Inicia sesión</button>
             </div>
           </form>
+          <!--<p>Form status: {{ registerForm.status | json }}</p>-->
         </div>
     </section>
 
