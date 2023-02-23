@@ -1,42 +1,62 @@
-<div class="contacto-form-content" name="register" id="register" >
-    <form class="contacto-form" (ngSubmit)="onContactar()" #loginForm="ngForm">
-      <div class="input-group">
-        <label for="name">
-          Nombre:
-        </label>
-        <input class="input" type="text" name="name" id="name" [(ngModel)]="contactar.name" required/>
-        <p class="msj-error" ng>Mensaje de error</p>
-      </div>
-      <div class="input-group">
-        <label for="email">
-          Email:
-        </label>
-        <input type="email" name="email" id="email" [(ngModel)]="contactar.email" required/>
-        <p class="msj-error">Mensaje de error</p>
-      </div>
-      <div class="input-group">
-        <label for="telefono">
-          Teléfono:
-        </label>
-        <input type="phone" name="telefono" id="telefono" [(ngModel)]="contactar.telefono"/>
-        <p class="msj-error">Mensaje de error</p>
-      </div>
-      <div class="input-group">
-        <label for="celular">
-          Celular:
-        </label>
-        <input type="celular" name="celular" id="celular" [(ngModel)]="contactar.celular" required/>
-        <p class="msj-error">Mensaje de error</p>
-      </div>
-      <div class="input-group">
-        <label for="whatsApp">
-          WhatsApp:
-        </label>
-        <input type="whatsApp" name="whatsApp" id="whatsApp" [(ngModel)]="contactar.whatsApp" required/>
-        <p class="msj-error">Mensaje de error</p>
-      </div>
-      <div class="content-btn">
-        <button class="form-submit" type="submit" [disabled]="loginForm.invalid">Registrar</button>
-      </div>
-    </form>
+<div class="contacto-content">
+  <div class="head">
+    <img src="../../../assets/imagenes/logos/IWAMI BLANCO.png" alt="logo iwami">
+    <hr>
   </div>
+  <div class="info-form">
+    <div class="contacto-info">
+      <p class="contacto-info-titulo">Estamos ubicados en:</p>
+      <p class="contacto-info-texto">Calle 73 SUR # 46CC - 16<br>
+        Sabaneta, Antioquia<br><br>
+      </p>
+      <p class="contacto-info-titulo">Escribenos:</p>
+      <p class="contacto-info-texto">iwamipersonalizados@gmail.com<br>
+        +57 314 3679940<br><br>
+      </p>
+      <p  class="contacto-info-titulo">Siguenos:</p>
+      <div class="iconos">
+        <a href="https://www.facebook.com/profile.php?id=100064176576523&mibextid=LQQJ4d">
+          <img src="../../../assets/imagenes/icons/face-circular-negro.png" alt="logo facebook">
+        </a>
+        <a href="https://www.instagram.com/iwamipersonalizados/">
+          <img class="img-insta" src="../../../assets/imagenes/icons/insta-circular-blanco.png" alt="logo instagram">
+        </a>
+      </div>
+    </div>
+    <div class="contacto-form-content" name="register" id="register">
+      <form class="contacto-form" (ngSubmit)="onContactar()" #loginForm="ngForm">
+        <div class="input-group">
+          <label for="name">
+            Nombre:
+          </label>
+          <input class="input" type="text" name="name" id="name" [(ngModel)]="contactar.name" required />
+          <p class="msj-error" ng>Mensaje de error</p>
+        </div>
+        <div class="input-group">
+          <label for="email">
+            Email:
+          </label>
+          <input type="email" name="email" id="email" [(ngModel)]="contactar.email" required />
+          <p class="msj-error">Mensaje de error</p>
+        </div>
+        <div class="input-group">
+          <label for="telefono">
+            Teléfono:
+          </label>
+          <input type="phone" name="telefono" id="telefono" [(ngModel)]="contactar.telefono" />
+          <p class="msj-error">Mensaje de error</p>
+        </div>
+        <div class="input-group">
+          <label for="asunto">
+            Asunto:
+          </label>
+          <textarea name="asunto" id="asunto" [(ngModel)]="contactar.celular" required ></textarea>
+          <p class="msj-error">Mensaje de error</p>
+        </div>
+        <div class="content-btn">
+          <button class="form-submit" type="submit" [disabled]="loginForm.invalid">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

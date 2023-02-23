@@ -19,7 +19,7 @@
           <form (ngSubmit)="onLogin()" #loginForm="ngForm" >
             <div class="imgcontainer">
               <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <img src="../../../assets/imagenes/descarga.png" alt="Avatar" class="avatar">
+              <img src="../../../assets/imagenes/icons/icono-persona.png" alt="Avatar" class="avatar">
             </div>
             <div class="input-group">
               <label for="name" class="modal-label">
@@ -54,21 +54,29 @@
                       required  
                       #registerName="ngModel"
                       />
-              <p style="none"[ngClass]="{'msj-error': registerName.invalid, 'msj-error-none': registerName.valid}">Debe ingresar el nombre</p>
+              <p [ngClass]="{'msj-error': registerName.invalid, 'msj-error-none': registerName.valid}">Debe ingresar el nombre</p>
             </div>
             <div class="input-group">
               <label for="email" class="form-label">
                 Email:
               </label>
-              <input type="email" name="email" id="email" [(ngModel)]="register.email" required/>
-              <p id="msj-error" [ngClass]="{'msj-error': registerName.invalid, 'msj-error-none': registerName.valid}">Debe ingresar el email</p>
+              <input type="email" 
+                      name="email" id="email" 
+                      [(ngModel)]="register.email" 
+                      required
+                      #registerEmail="ngModel"/>
+              <p [ngClass]="{'msj-error': registerEmail.invalid, 'msj-error-none': registerEmail.valid}">Debe ingresar el email</p>
             </div>
             <div class="input-group">
               <label for="password" class="form-label">
                 Contraseña:
               </label>
-              <input type="password" name="password" id="password" [(ngModel)]="register.password" required/>
-              <p id="msj-error" [ngClass]="{'msj-error': registerName.invalid, 'msj-error-none': registerName.valid}">Debe ingresar la contraseña</p>
+              <input type="password"
+                      name="password" id="password" 
+                      [(ngModel)]="register.password" 
+                      required
+                      #registerPassword="ngModel"/>                      
+              <p [ngClass]="{'msj-error': registerPassword.invalid, 'msj-error-none': registerPassword.valid}">Debe ingresar la contraseña</p>
             </div>
             <div class="content-buttons">
               <button [disabled]="registerForm.invalid" class="form-btn" type="submit" >Regístrate</button>
